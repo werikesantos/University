@@ -5,38 +5,36 @@ public class Caneta {
 		private String tipo;
 		private String cor;
 		
-		//construtor modificador
-		public Caneta() {
-			this.tipo = "";
-			this.cor = "";
+		//==============# CONSTRUTOR #===================
+		public Caneta(String tipo, String cor){
+			this.tipo = tipo;
+			this.cor = cor;
 		}
-		//construtor acessor
-		public Caneta(String t, String c){
-			this.tipo = t;
-			this.cor = c;
+		
+		//===============# MÉTODOS #=====================
+		public void imprimir() {
+			System.out.println("Caneta: "+getTipo()+"\nCor: "+getCor()+"\n=========================");
 		}
-
-		//Acessor do atributo "tipo"
+		
+		//===============# SETTER_GETTER #===============
+		//Acessor TIPO
 		public String getTipo() {
 			return this.tipo;
 		}
 		
-		//Modificador do atributo "tipo"
-		public void setTipo(String t) {
-			this.tipo = t;
+		//Modificador TIPO
+		public void setTipo(String tipo) {
+			this.tipo = tipo;
 		}
 		
-		//Acessor do atributo "cor"
+		//===============================================
+		//Acessor COR
 		public String getCor() {
 			return this.cor;
 		}
 		
-		//Modificador do atributo "cor"
-		public void setCor(String c) {
-			this.cor = c;
-		}
-		
-		public void status() {
-			System.out.println("Caneta: "+getTipo()+"\nCor: "+getCor()+"\n=========================");
-		}
+		//Modificador COR
+		public void setCor(String cor) {
+			this.cor = cor;
+		}		
 }
