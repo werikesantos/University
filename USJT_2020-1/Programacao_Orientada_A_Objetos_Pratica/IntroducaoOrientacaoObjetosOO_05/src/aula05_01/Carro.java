@@ -1,7 +1,5 @@
 package aula05_01;
 
-import javax.swing.JOptionPane;
-
 public class Carro {
 	
 	private String marca;
@@ -11,80 +9,96 @@ public class Carro {
 	private double preco;
 	private boolean zero;
 	
-	//construtor
-	public Carro(String ma,String mo,String c,int a,double p,boolean z) {
-		this.marca = ma;
-		this.modelo = mo;
-		this.cor = c;
-		this.anoDeFabricacao = a;
-		this.preco = p;
-		this.zero = z;
+	//==============# CONSTRUTOR #===================
+	public Carro(String marca,String modelo,String cor,int anoDeFabricacao,double preco,boolean zero) {
+		this.marca = marca;
+		this.modelo = modelo;
+		this.cor = cor;
+		this.anoDeFabricacao = anoDeFabricacao;
+		this.preco = preco;
+		this.zero = zero;
 	}
 	
-	//Acessor Marca
+	//===============# MÉTODOS #=====================
+	//Método IMPRIMIR
+	public void imprimir() {
+		System.out.println("======$-CARROS_À_VENDA-$=======\n"+"Marca: "+getMarca()+"\nModelo: "+getModelo()+"\nCor: "+getCor()+"\nAno: "+getAnoDeFabricacao()+"\nPreço: R$ "+getPreco()+"\n");
+	}
+	
+	//Método Status
+	public void status() {
+		
+		if(zero == true) {
+			System.out.println("O carro é novo!\n===============================\n");
+		}else {
+			System.out.println("O carro é usado!\n===============================\n");
+		}
+	}
+	
+	//===============# SETTER_GETTER #===============
+	//Acessor MARCA
 	public String getMarca() {
 		return this.marca;
 	}
 	
-	//Modificador Marca
-	public void setMarca(String ma) {
-		this.marca = ma;
+	//Modificador MARCA
+	public void setMarca(String marca) {
+		this.marca = marca;
 	}
 	
-	//Acessor Modelo
+	//===============================================
+	//Acessor MODELO
 	public String getModelo() {
 		return this.modelo;
 	}
 	
-	//Modificador Modelo
-	public void setModelo(String mo) {
-		this.modelo = mo;
+	//Modificador MODELO
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
 	}
 	
-	//Acessor cor
+	//===============================================
+	//Acessor COR
 	public String getCor() {
 		return this.cor;
 	}
 	
-	//Modificador cor
-	public void setCor(String c) {
-		this.cor = c;
+	//Modificador COR
+	public void setCor(String cor) {
+		this.cor = cor;
 	}
 	
-	//Acessor anoDeFabricacao
+	//===============================================
+	//Acessor ANO DE FABRICAÇÃO
 	public int getAnoDeFabricacao() {
 		return this.anoDeFabricacao;
 	}
 	
-	//Modificador anoDeFabricacao
-	public void setAnoDeFabricacao(int a) {
-		this.anoDeFabricacao = a;
+	//Modificador ANO DE FABRICAÇÃO
+	public void setAnoDeFabricacao(int anoDeFabricacao) {
+		this.anoDeFabricacao = anoDeFabricacao;
 	}
 	
-	//Acesor preço
+	//===============================================
+	//Acesor PREÇO
 	public double getPreco() {
 		return this.preco;
 	}
 	
-	//Modificador preço
-	public void setPreco(double p) {
-		this.preco = p;
+	//Modificador PREÇO
+	public void setPreco(double preco) {
+		this.preco = preco;
 	}
 	
-	//Acesso zero
+	//===============================================
+	//Acesso ZERO
 	public boolean getZero() {
 		return this.zero;
 	}
 	
-	//Modificador zero
-	public void setZero(boolean z) {
-		this.zero = z;
-				
-	}
-		
-	//metodo imprimir
-	public void imprimir() {
-		System.out.println(getMarca()+"\n"+getModelo()+"\n"+getCor()+"\n"+getAnoDeFabricacao()+"\n"+getPreco()+"\n"+getZero());
+	//Modificador ZERO
+	public void setZero(boolean zero) {
+		this.zero = zero;			
 	}
 	
 }
