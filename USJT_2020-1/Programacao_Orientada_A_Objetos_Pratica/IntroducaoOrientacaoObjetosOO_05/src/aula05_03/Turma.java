@@ -1,7 +1,5 @@
 package aula05_03;
 
-import javax.swing.JOptionPane;
-
 public class Turma {
 	
 	/* Resolva os exercícios desta seção para conquistar 0,5 ponto

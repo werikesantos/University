@@ -22,21 +22,19 @@ public class TesteTurma {
 		
 		Turma turma = new Turma(nome,curso,quantidadeDeAlunos,serie);
 		
-		turma.imprimir();
+		JOptionPane.showMessageDialog(null, turma.imprimir());
 		
 		nome = JOptionPane.showInputDialog("Digite o seu Nome:");
 		curso = JOptionPane.showInputDialog("Digite o curso:");
 		quantidadeDeAlunos = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade de alunos:"));
 		serie = Integer.parseInt(JOptionPane.showInputDialog("Digite a serie:"));
 		
-		//Método MODIFICADOR
 		turma.setNome(nome);
 		turma.setCurso(curso);
 		turma.setQuantidadeDeAlunos(quantidadeDeAlunos);
 		turma.setSerie(serie);
 		
-		turma.imprimir();
-		
+		JOptionPane.showMessageDialog(null, turma.imprimir());
 	}
 
 }
