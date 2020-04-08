@@ -24,8 +24,8 @@ public class Turma {
 		this.serie = serie;
 	}
 	//===============# MÉTODOS #=====================
-	public void imprimir() {
-		JOptionPane.showMessageDialog(null, "Aluno: "+nome+"\nCurso: "+curso+"\nQuantidade: "+quantidadeDeAlunos+"\nSerie: "+serie);
+	public String imprimir() {
+		return "Aluno: "+nome+"\nCurso: "+curso+"\nQuantidade: "+quantidadeDeAlunos+"\nSerie: "+serie;
 	}
 	
 	
