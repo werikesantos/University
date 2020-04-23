@@ -1,0 +1,14 @@
+SQL (Structured Query Language) 
+
+* DDL (Data Definition Language): CREATE, ALTER, DROP.
+
+* DML (Data Manipulation Language): INSERT, DELETE, UPDATE
+
+* DQL (Data Query Language): SELECT (BETWEEN; DISTINCT) 
+
+
+
+ATIVIDADE:
+
+* Criar todas as tabelas de todas entidades.
+	"Companhia" + "Livraria".
