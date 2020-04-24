@@ -6,9 +6,32 @@ SQL (Structured Query Language)
 
 * DQL (Data Query Language): SELECT (BETWEEN; DISTINCT) 
 
-
-
+========================================================
 ATIVIDADE:
 
 * Criar todas as chaves estrangeiras:
       "Companhia" + "Livraria".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
