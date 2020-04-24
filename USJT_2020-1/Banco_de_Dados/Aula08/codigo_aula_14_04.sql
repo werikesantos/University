@@ -49,7 +49,8 @@ ALTER TABLE aluno ADD (
 );
 
 # Removendo um campo de uma tabela: 
-ALTER TABLE aluno DROP ( nome );
+# linha 52 é um exemplo
+# ALTER TABLE aluno DROP ( nome );
 
 # Listando as colunas e suas propriedades:
 DESCRIBE aluno;
