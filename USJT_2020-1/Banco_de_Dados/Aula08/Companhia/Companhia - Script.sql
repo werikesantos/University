@@ -20,7 +20,12 @@ SELECT * FROM departamento;
 CREATE TABLE projeto(
 	id INT PRIMARY KEY NOT NULL,
     nome VARCHAR(30) NOT NULL,
-    tempo_desenvolver INT NOT NULL
+    tempo_desenvolver INT NOT NULL,
+    
+     # Criando uma chave estrangeira 
+    fk_departamento_id INT NOT NULL,
+    # Referência:
+    FOREIGN KEY (fk_departamento_id) REFERENCES departamento (id)
 );
 
 # MOSTRAR A TABELA 'PROJETO'
@@ -29,7 +34,17 @@ SELECT * FROM projeto;
 # CRIAR TABELA 'PESQUISADOR'
 CREATE TABLE pesquisador(
 	id_pesquisador INT PRIMARY KEY NOT NULL,
-    salario FLOAT(4,2) NOT NULL
+    salario FLOAT(4,2) NOT NULL,
+    
+	# Criando uma chave estrangeira 
+    fk_funcionario_id INT NOT NULL,
+    # Referência:
+    FOREIGN KEY (fk_funcionario_id) REFERENCES funcionario (id),
+    
+    # Criando uma chave estrangeira 
+    fk_projeto_id INT NOT NULL,
+    # Referência:
+    FOREIGN KEY (fk_projeto_id) REFERENCES projeto (id)
 ); 
 
 # MOSTRAR A TABELA 'PESQUISADOR'
@@ -39,8 +54,13 @@ SELECT * FROM pesquisador;
 CREATE TABLE secretario(
 	id_secretario INT PRIMARY KEY NOT NULL,
     salario FLOAT(4,2) NOT NULL,
-    grau_escolar VARCHAR(30) NOT NULL
-);
+    grau_escolar VARCHAR(30) NOT NULL,
+    
+    # Criando uma chave estrangeira 
+    fk_funcionario_id INT NOT NULL,
+    # Referência:
+    FOREIGN KEY (fk_funcionario_id) REFERENCES funcionario (id)
+); 
 
 # MOSTRAR A TABELA 'SECRETARIO'
 SELECT * FROM secretario;
@@ -49,11 +69,17 @@ SELECT * FROM secretario;
 CREATE TABLE limpeza(
 	id INT PRIMARY KEY NOT NULL,
     cargo VARCHAR(30) NOT NULL,
-    jornada_trabalho INT NOT NULL
-); 
+    jornada_trabalho INT NOT NULL,
+    
+    # Criando uma chave estrangeira 
+    fk_funcionario_id INT NOT NULL,
+    # Referência:
+    FOREIGN KEY (fk_funcionario_id) REFERENCES funcionario (id)
+);
 
 # MOSTRAR A TABELA 'LIMPEZA'
 SELECT * FROM limpeza;
+DESCRIBE limpeza;
 
 # CRIAR TABELA 'FUNCIONÁRIO'
 CREATE TABLE Funcionario(
@@ -72,7 +98,12 @@ CREATE TABLE Dependente(
 	nome VARCHAR(30) NOT NULL,
     sexo VARCHAR(1) NOT NULL,
     aniversario INT(10) NOT NULL,
-    grau_parentesco VARCHAR(30) NOT NULL
+    grau_parentesco VARCHAR(30) NOT NULL,
+    
+    # Criando uma chave estrangeira 
+    fk_funcionario_id INT NOT NULL,
+    # Referência:
+    FOREIGN KEY (fk_funcionario_id) REFERENCES funcionario (id)
 );
 
 # MOSTRAR A TABELA 'DEPENDENTE'
