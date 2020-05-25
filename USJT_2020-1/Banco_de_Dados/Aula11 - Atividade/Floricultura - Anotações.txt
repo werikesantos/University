@@ -1,0 +1,30 @@
+Floricultura
+
+Tabela cadastro_cliente
+-id
+-Rg
+-Nome
+-Telefone
+-Endereço
+
+Tabela produto_vendido
+-id
+-nome_produto
+-preço
+-quantidade_estoque
+
+Tabela cliente_Compra
+-id
+-data_compra
+-valor_total
+-id_cadastro_cliente
+-id_produto_vendido
+
+
+
+cadastro_cliente (1)      (N) cliente_Compra (1)        (N) produto_vendido
+        id = 1             id_cadastro_cliente            id = 1 flor
+                           id_produto_vendido             id = 2 arvre
+
+RESPOSTA: 
+Um unico cliente cadastrado, possuíndo o seu ID que estará associado a uma tabela cliente_compra que carrega o seu ID com data e valor de compra. Essa mesma tabela, carregará um pedido de um cliente, onde que por sua vez, carrega os dados cadastrado dos produtos.
