@@ -6,7 +6,7 @@ public class Exe01_CalculaDiasDeVida {
 
 	public static void main(String[] args) {
 		
-		/* EXERCICIO 01
+		/* EXERCÍCIO 01
 		 * 
 		 *  Crie um algoritmo para calcular o número de dias aproximado que você viveu, com base em sua idade.
 		 *
