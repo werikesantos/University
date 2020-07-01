@@ -6,7 +6,7 @@ public class Exe05_CalculaDivida {
 
 	public static void main(String[] args) {
 		
-		/* EXERCICIO 05
+		/* EXERCÍCIO 05
 		 * 
 		 * Crie um algoritmo que calcule o valor de uma divida, submetida a juros compostos:
 		 * Valor_Final = Valor_Inicial * (1 + J/100)^N, onde J representa os juros (em %) e N representa
