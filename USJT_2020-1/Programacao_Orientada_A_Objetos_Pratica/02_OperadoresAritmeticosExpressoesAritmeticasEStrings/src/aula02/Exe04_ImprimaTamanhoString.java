@@ -6,7 +6,7 @@ public class Exe04_ImprimaTamanhoString {
 
 	public static void main(String[] args) {
 		
-		/* EXERCICIO 04
+		/* EXERCÍCIO 04
 		 * 
 		 * Crie um algoritmo que leia três strings por meio do JOptionPane e escreva a soma do
 		 * comprimento destas strings.
