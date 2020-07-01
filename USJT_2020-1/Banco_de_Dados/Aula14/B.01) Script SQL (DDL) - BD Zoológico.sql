@@ -11,7 +11,7 @@ CREATE TABLE cadastro_funcionario(
     endereco VARCHAR(200) NOT NULL, 
     setor VARCHAR(100) NOT NULL, 
     cargo VARCHAR(100) NOT NULL,
-    crmv VARCHAR(9) NOT NULL
+    crmv VARCHAR(9) 
 );
 
 CREATE TABLE cadastro_animal(
@@ -67,3 +67,5 @@ CREATE TABLE agendar_limpeza(
     
     FOREIGN KEY (fk_conteiner_id_conteiner) REFERENCES conteiner(id_conteiner)
 );
+
+SHOW TABLES;
