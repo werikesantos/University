@@ -4,7 +4,7 @@ public class Exe03_AtribuindoValorVariavel {
 
 	public static void main(String[] args) {
 
-		// ATRIBUINDO VALORES NA VARIÁVEL
+		// ATRIBUINDO VALORES NAS VARIÁVEIS
 		int x = 10;
 		double y = 45.3;
 		char c = 'c';
