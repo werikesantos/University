@@ -1,0 +1,71 @@
+#SQL - Structured Query Language
+
+nota = 9
+nota > 9
+nota >= 9
+
+nome = "Maria"
+nota != 8
+nome != "Maria"
+
+#Fazer uma busca por determinados caracteres
+
+SELECT
+	*
+FROM
+	aluno
+WHERE
+	nome LIKE "%oa%";
+
+#O COMANDO 'LIKE' é utilizado somente para tipos VARCHAR.
+#Na condição 'WHERE' está solicitando uma busca numa String #determinando que não importa o que vem antes dos caracteres 'oa' #utilizando o operador' % ' e não importando também, o que vem #depois, utilizando novamente o operador.
+
+
+#Começando uma busca com as iniciais 'M'
+SELECT
+	*
+FROM
+	aluno
+WHERE
+	nome LIKE "M%";
+
+
+#Quando não sei qual condição aplicar, e desejo verificar todos os nomes para começar a fazer a busca:
+
+SELECT
+	*
+FROM
+	aluno
+WHERE
+	nome LIKE "%"; #Mostra todos
+
+# O comando LIKE não é Case sensitivity!!!
+
+
+#Para organizar os resultados de forma ascendente ou descendente?
+
+SELECT
+	*
+FROM
+	avaliacao
+WHERE
+	numero_prova = 2
+ORDER BY nota;             #Por padrão o ORDER BY é definido do menor para o maior (ASCENDENTE ASC)
+
+#Para definir do maior para o menor, utilizamos utilizamos o (descendente DES)
+
+SELECT
+	*
+FROM
+	avaliacao
+WHERE
+	numero_prova = 2
+ORDER BY nota DESC;
+
+#Excluindo resultados de campos vazios
+SELECT
+	*
+FROM
+	aluno
+WHERE nascimento IS NOT NULL
+ORDER BY nascimento;
