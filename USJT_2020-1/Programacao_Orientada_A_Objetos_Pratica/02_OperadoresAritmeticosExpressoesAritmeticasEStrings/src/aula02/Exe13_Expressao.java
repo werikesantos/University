@@ -6,7 +6,7 @@ public class Exe13_Expressao {
 
 	public static void main(String[] args) {
 		
-		/* EXERCICIO 13
+		/* EXERCÍCIO 13
 		 * 
 		 * Escrever um algoritmo que leia três número reais (a, b e c), calcule e escreve o resultado
 		 * da expressão x = 2 * ( ( a - c ) / 8 ) = b * 5.
