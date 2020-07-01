@@ -8,9 +8,9 @@ public class Exe04_Concatenacao {
 		int g = 10;
 		String x = "Bom";
 		
-		x = x + " Dia"; //o conteúdo de x agora é "Bom Dia"
+		x = x + " Dia"; //O CONTEÚDO DE 'x' AGORA É "Bom Dia"
 		
-		x = x + ", " + g; //agora x vale "Bom Dia, 10"
+		x = x + ", " + g; //AGORA 'x' VALE "Bom Dia, 10"
 		
 		//MOSTRANDO O RESULTADO NO CONSOLE
 		System.out.println(x);
