@@ -6,7 +6,7 @@ public class Exe03_RaizQuadrada {
 
 	public static void main(String[] args) {
 		
-		/* EXERCICIO 03
+		/* EXERCÍCIO 03
 		 * 
 		 * Crie um algoritmo que leia um número inteiro e o eleve ao quadrado usando o método
 		 * double Math.pow(base, expoente), onde base e expoente são número reais.
