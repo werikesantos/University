@@ -67,6 +67,8 @@ public class Randori {
 	String nomeUsr = nome.substring(0,3);
 	String sobrenomeUsr = nome.substring(nome.length() - 3);
 	
+	System.out.println(sobrenomeUsr);
+	
 	String novoUsr = (nomeUsr + sobrenomeUsr);
 
 	JOptionPane.showMessageDialog(null, "O nome de usuário de rede é: " + novoUsr);
