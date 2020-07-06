@@ -6,7 +6,7 @@ public class ExerciciosComplementares {
 
 	public static void main(String[] args) {
 			
-		ExerciciosComplementares exerciciosComplementares= new ExerciciosComplementares();
+		ExerciciosComplementares exerciciosComplementares = new ExerciciosComplementares();
 		
 		exerciciosComplementares.atividade5();
 		
@@ -28,6 +28,26 @@ public class ExerciciosComplementares {
 		
 		exerciciosComplementares.atividade14();
 		
+		exerciciosComplementares.atividade15();
+		
+		exerciciosComplementares.atividade16();
+		
+		exerciciosComplementares.atividade17();
+		
+		exerciciosComplementares.atividade18();
+		
+		exerciciosComplementares.atividade19();
+
+		exerciciosComplementares.atividade20();
+		
+		exerciciosComplementares.atividade21();
+		
+		exerciciosComplementares.atividade22();
+		
+		exerciciosComplementares.atividade23();
+		
+		exerciciosComplementares.atividade24();
+	
 		System.exit(0);
 	}
 	
@@ -288,6 +308,350 @@ public class ExerciciosComplementares {
 			
 		}
 		
+	}
+	
+	public void atividade15() {
+		
+		/* ATIVIDADE 15
+		 * 
+		 * Entrar com o ano de nascimento de uma pessoa e o ano atual. Imprimir a idade da pessoa. 
+		 * Não se esqueça de verificar se o ano de nascimento é um ano válido.
+		 * 
+		 */
+		
+		int nascimento = Integer.parseInt(JOptionPane.showInputDialog("Digite o ano nascimento:"));
+		int anoAtual = Integer.parseInt(JOptionPane.showInputDialog("Digite o ano atual:"));
+		
+		int idade = anoAtual - nascimento;
+		
+		if(nascimento < anoAtual && idade > 10) {
+	
+			JOptionPane.showMessageDialog(null, "Você tem " +idade+ " anos de idade.");
+		
+		}else{
+		
+			JOptionPane.showMessageDialog(null, "Você tem menos de 10 anos, e não poderá concluir seu cadastro!");
+			
+		}
+		
+	}
+	
+	public void atividade16() {
+		
+		/* ATIVIDADE 16
+		 * 
+		 * Crie um algoritmo que leia dois números e imprimir uma mensagem dizendo se são iguais ou diferentes.
+		 * 
+		 */
+		
+		int numero1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro número:"));
+		int numero2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo número:"));
+		
+		if(numero1 == numero2) {
+			
+			JOptionPane.showMessageDialog(null, "Os número digitados foram:\n " + numero1 + " - " + numero2 + "\nSão números IGUAIS!");
+			
+		}else if(!(numero1 == numero2)) {
+			
+			JOptionPane.showMessageDialog(null, "Os número digitados foram:\n " + numero1 + " - " + numero2 + "\nSão números DIFERENTES!");
+			
+		}
+		
+	}
+	
+	public void atividade17() {
+		
+		/* ATIVIDADE 17
+		 * 
+		 * Entrar com dois números e imprimir o menor número (suponha números diferentes).
+		 * 
+		 */
+		
+		int numero1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro número:"));
+		int numero2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo número:"));
+		
+		if(numero1 < numero2) {
+			
+			JOptionPane.showMessageDialog(null, "Os número digitados foram:\n " + numero1 + " - " + numero2 + "\nO PRIMEIRO número digitado é o MENOR número!");
+			
+		}else if(numero2 < numero1) {
+			
+			JOptionPane.showMessageDialog(null, "Os número digitados foram:\n " + numero1 + " - " + numero2 + "\nO SEGUNDO número digitado é o MENOR número!");
+			
+		}
+		
+		
+	}
+	
+	public void atividade18() {
+		
+		/* ATIVIDADE 18
+		 * 
+		 * Entrar com dois números e imprimi-los em ordem crescente (suponha números diferentes).
+		 * 
+		 */
+		
+		int numero1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro número:"));
+		int numero2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo número:"));
+		
+		if(numero1 < numero2) {
+			
+			JOptionPane.showMessageDialog(null, "Os número digitados foram:\n " + numero1 + " - " + numero2 + "\nOrdem CRESCENTE:\n" +numero1+" - "+numero2);
+			
+		}else if(numero2 < numero1) {
+			
+			JOptionPane.showMessageDialog(null, "Os número digitados foram:\n" + numero1 + " - " + numero2 + "\nOrdem CRESCENTE:\n" +numero2+" - "+numero1);
+			
+		}
+	}
+	
+	public void atividade19() {
+		
+		/* ATIVIDADE 19
+		 * 
+		 * Entrar com dois números e imprimi-los em ordem decrescente (suponha números diferentes).
+		 * 
+		 */
+		
+		int numero1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro número:"));
+		int numero2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo número:"));
+		
+		if(numero1 > numero2) {
+			
+			JOptionPane.showMessageDialog(null, "Os número digitados foram:\n " + numero1 + " - " + numero2 + "\nOrdem DECRESCENTE:\n" +numero1+" - "+numero2);
+			
+		}else if(numero2 > numero1) {
+			
+			JOptionPane.showMessageDialog(null, "Os número digitados foram:\n" + numero1 + " - " + numero2 + "\nOrdem DECRESCENTE:\n" +numero2+" - "+numero1);
+			
+		}
+		
+	}
+	
+	public void atividade20() {
+		
+		/* ATIVIDADE 20
+		 * 
+		 * Criar um algoritmo que deixe entrar com dois números e imprimir o quadrado do menor número e a 
+		 * raiz quadrada do maior número, se for possível (suponha números diferentes).
+		 * 
+		 */
+		
+		int numero1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro número:"));
+		int numero2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo número:"));
+		
+		if(numero1 < numero2) {
+			
+			int menor = numero1 * numero1;
+			double maior = Math.sqrt(numero2);
+			
+			JOptionPane.showMessageDialog(null, String.format("Os número digitados foram:\n" + numero1 + " - " + numero2 + "\nO QUADRADO do PRIMEIRO e MENOR número é igual = " + menor+"\nA RAIZ QUADRADA do SEGUNDO e MAIOR número é igual = %.2f",maior));
+			
+		}else if(numero2 < numero1) {
+			
+			int menor = numero2 * numero2;
+			double maior = Math.sqrt(numero1);
+			
+			JOptionPane.showMessageDialog(null, String.format("Os número digitados foram:\n" + numero1 + " - " + numero2 + "\nO QUADRADO do SEGUNDO e MENOR número é igual = " + menor + "\nA RAIZ QUADRADA do PRIMEIRO número é igual = %.2f", maior));
+			
+		}
+		
+	}
+	
+	public void atividade21() {
+		
+		/* ATIVIDADE 21
+		 * 
+		 * Ler três números e escrever o maior número (suponha números diferentes).
+		 * 
+		 */
+		
+		int numero1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro número:"));
+		int numero2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo número:"));
+		int numero3 = Integer.parseInt(JOptionPane.showInputDialog("Digite o terceiro número:"));
+		
+		if((numero1 > numero2) && (numero1 > numero3)) {
+			
+			JOptionPane.showMessageDialog(null, "Os número digitados foram:\n" + numero1 + " - " + numero2 + " - " + numero3 + "\nO MAIOR número é " +numero1);
+			
+		}else if((numero2 > numero1) && (numero2 > numero3)) {
+			
+			JOptionPane.showMessageDialog(null, "Os número digitados foram:\n" + numero1 + " - " + numero2 + " - " + numero3 + "\nO MAIOR número é " +numero2);
+			
+		}else if((numero3 > numero1) && (numero3 > numero2)) {
+			
+			JOptionPane.showMessageDialog(null, "Os número digitados foram:\n" + numero1 + " - " + numero2 + " - " + numero3 + "\nO MAIOR número é " +numero3);
+			
+		}
+	
+	}
+	
+	public void atividade22() {
+		
+		/* ATIVIDADE 22
+		 * 
+		 * Ler três números e armazenar o maior número na variável de nome maior (suponha números diferentes).
+		 * 
+		 */
+		
+		int numero1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro número:"));
+		int numero2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo número:"));
+		int numero3 = Integer.parseInt(JOptionPane.showInputDialog("Digite o terceiro número:"));
+		
+		int maior = 0;
+		
+		if((numero1 > numero2) && (numero1 > numero3)) {
+			
+			maior = numero1;
+			
+			JOptionPane.showMessageDialog(null, "Os número digitados foram:\n" + numero1 + " - " + numero2 + " - " + numero3 + "\nO MAIOR número é " +maior);
+			
+		}else if((numero2 > numero1) && (numero2 > numero3)) {
+			
+			maior = numero2;
+			
+			JOptionPane.showMessageDialog(null, "Os número digitados foram:\n" + numero1 + " - " + numero2 + " - " + numero3 + "\nO MAIOR número é " +maior);
+			
+		}else if((numero3 > numero1) && (numero3 > numero2)) {
+			
+			maior = numero3;
+			
+			JOptionPane.showMessageDialog(null, "Os número digitados foram:\n" + numero1 + " - " + numero2 + " - " + numero3 + "\nO MAIOR número é " +maior);
+			
+		}
+		
+	}
+	
+	public void atividade23() {
+		
+		/* ATIVIDADE 23
+		 * 
+		 * Ler três números e armazená-los em três variáveis com os seguintes nomes, de acordo com seus valores relativos: 
+		 * maior, intermediário e menor (suponha números diferentes).
+		 * 
+		 */
+		
+		int numero1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro número:"));
+		int numero2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo número:"));
+		int numero3 = Integer.parseInt(JOptionPane.showInputDialog("Digite o terceiro número:"));
+		
+		int maior = 0;
+		int intermediario = 0;
+		int menor = 0;
+		
+		//ACHANDO O MAIOR NÚMERO
+		if((numero1 > numero2) && (numero1 > numero3)) {
+			
+			maior = numero1;
+			
+		}else if((numero2 > numero1) && (numero2 > numero3)) {
+			
+			maior =  numero2;
+			
+		}else if((numero3 > numero1) && (numero3 > numero2)) {
+			
+			maior =  numero3;
+			
+		}
+				
+		//ACHANDO O NÚMERO INTERMEDIÁRIO
+		if((numero1 > numero2) && (numero1 < numero3)) {
+			
+			intermediario = numero1;
+			
+		}else if((numero2 < numero1) && (numero2 > numero3)) {
+			
+			intermediario = numero2;
+			
+		}else if((numero3 > numero1) && (numero3 < numero2)) {
+			
+			intermediario = numero3;
+
+		}
+		
+		//ACHANDO O MENOR NÚMERO
+		if((numero1 < numero2) && (numero1 < numero3)) {
+			
+			menor = numero1;
+
+		}else if((numero2 < numero1) && (numero2 < numero3)) {
+			
+			menor = numero2;
+			
+		}else if((numero3 < numero1) && (numero3 < numero2)) {
+			
+			menor = numero3;
+			
+		}
+		
+		JOptionPane.showMessageDialog(null, "Os número digitados foram:\n" + numero1 + " - " + numero2 + " - " + numero3 + "\nO MAIOR número é: " +maior+ "\nO número INTERMEDIÁRIO é: "+intermediario+"\nO MENOR número é: "+menor);
+		
+	}
+	
+	public void atividade24() {
+		
+		/* ATIVIDADE 24
+		 * 
+		 * Ler cinco números e identificar o maior e o menor de todos (NÃO suponha números diferentes).
+		 * 
+		 */
+	
+		int maior = 0;
+		int menor = 0;
+		
+		int numero1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro número:"));
+		int numero2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo número:"));
+		int numero3 = Integer.parseInt(JOptionPane.showInputDialog("Digite o terceiro número:"));
+		int numero4 = Integer.parseInt(JOptionPane.showInputDialog("Digite o quarto número:"));
+		int numero5 = Integer.parseInt(JOptionPane.showInputDialog("Digite o quinto número:"));
+		
+		//ACHANDO O NÚMERO MAIOR
+		if((numero1 > numero2) && (numero1 > numero3) && (numero1 > numero4) && (numero1 > numero5)) {
+			
+			maior = numero1;
+			
+		}else if((numero2 > numero1) && (numero2 > numero3) && (numero2 > numero4) && (numero2 > numero5)) {
+			
+			maior = numero2;
+			
+		}else if((numero3 > numero1) && (numero3 > numero2) && (numero3 > numero4) && (numero3 > numero5)) {
+			
+			maior = numero3;
+			
+		}else if((numero4 > numero1) && (numero4 > numero2) && (numero4 > numero3) && (numero4 > numero5)) {
+			
+			maior = numero4;
+			
+		}else if((numero5 > numero1) && (numero5 > numero2) && (numero5 > numero3) && (numero5 > numero4)) {
+			
+			maior = numero5;
+			
+		}
+		
+		//ACHANDO O NÚMERO MENOR
+		if((numero1 < numero2) && (numero1 < numero3) && (numero1 < numero4) && (numero1 < numero5)) {
+			
+			menor = numero1;
+			
+		}else if((numero2 < numero1) && (numero2 < numero3) && (numero2 < numero4) && (numero2 < numero5)) {
+			
+			menor = numero2;
+			
+		}else if((numero3 < numero1) && (numero3 < numero2) && (numero3 < numero4) && (numero3 < numero5)) {
+			
+			menor = numero3;
+			
+		}else if((numero4 < numero1) && (numero4 < numero2) && (numero4 < numero3) && (numero4 < numero5)) {
+			
+			menor = numero4;
+			
+		}else if((numero5 < numero1) && (numero5 < numero2) && (numero5 < numero3) && (numero5 < numero4)) {
+			
+			menor = numero5;
+			
+		}
+		
+		JOptionPane.showMessageDialog(null, "Os número digitados foram:\n" + numero1 + " - " + numero2 + " - " + numero3 + " - " + numero4 + " - " + numero5 + "\nO MAIOR número é: " +maior+ "\nO MENOR número é: "+menor);
 	}
 
 }
