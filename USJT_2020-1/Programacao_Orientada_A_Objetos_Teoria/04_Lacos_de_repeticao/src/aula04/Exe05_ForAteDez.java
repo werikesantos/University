@@ -14,6 +14,8 @@ public class Exe05_ForAteDez {
 		 * B) condição lógica de parada
 		 * C) incremento da variável contadora.
 		 * 
+		 ****USADO QUANDO SE CONHECE O NÚMERO DE VOLTAS QUE SERÁ DADE NO LOOP. 
+		 * 
 		 */
 		
 		for (int i = 0; i <= 10; i++) {
