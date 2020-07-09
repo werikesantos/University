@@ -21,6 +21,8 @@ public class Exercicio04_EntreCemEDuzentos {
 		
 		exercicio04_EntreCemEDuzentos._for_EntreCemEDuzentos();
 	
+		System.exit(0);
+		
 	}
 	
 	public void _while_EntreCemEDuzentos() {
