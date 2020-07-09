@@ -29,11 +29,11 @@ public class Kata {
 		
 		Kata kata2 = new Kata();
 		
-		kata2._while_ImprimirTriplo();
+		kata2._while_atividade2();
 		
-		kata2.do_while_ImprimirTriplo();
+		kata2.do_while_atividade2();
 		
-		kata2._for_ImprimirTriplo();
+		kata2._for_atividade2();
 		
 		
 		System.exit(0);
@@ -92,7 +92,7 @@ public class Kata {
 	}
 	
 	//MÉTODO: O TRIPLO DE NÚMEROS INTEIROS - 'while'
-	public void _while_ImprimirTriplo() {
+	public void _while_atividade2() {
 	
 		int a;
 		int triplo;
@@ -111,7 +111,7 @@ public class Kata {
 	}
 	
 	//MÉTODO: O TRIPLO DE NÚMEROS INTEIROS - 'do_while'
-	public void do_while_ImprimirTriplo() {
+	public void do_while_atividade2() {
 		
 		int a;
 		
@@ -134,7 +134,7 @@ public class Kata {
 	}
 	
 	//MÉTODO: O TRIPLO DE NÚMEROS INTEIROS - 'for'
-	public void _for_ImprimirTriplo() {
+	public void _for_atividade2() {
 
 		for(int a = 0; a != -999;) {
 			
