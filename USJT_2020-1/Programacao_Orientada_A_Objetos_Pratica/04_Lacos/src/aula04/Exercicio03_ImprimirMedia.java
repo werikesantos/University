@@ -24,6 +24,7 @@ public class Exercicio03_ImprimirMedia {
 		
 	}
 	
+	//IMPRIMIR MÉDIA 'while'
 	public void _while_ImprimirMedia() {
 				
 		int a = 0;
@@ -44,12 +45,13 @@ public class Exercicio03_ImprimirMedia {
 			
 		}
 		
-		int media = b / c;
+		float media = b / c;
 		
 		JOptionPane.showMessageDialog(null, "A média dos número digitados é:\n" + media); 
 		
 	}
 	
+	//IMPRIMIR MÉDIA 'do_while'
 	public void _do_while_ImprimirMedia() {
 		
 		int a = 0;
@@ -77,6 +79,7 @@ public class Exercicio03_ImprimirMedia {
 		
 	}
 	
+	//IMPRIMIR MÉDIA 'for'
 	public void _for_ImprimirMedia() {
 		
 		int b = 0;
