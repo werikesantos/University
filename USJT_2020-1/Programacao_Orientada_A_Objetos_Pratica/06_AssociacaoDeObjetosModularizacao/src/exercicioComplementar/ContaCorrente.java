@@ -125,53 +125,24 @@ public class ContaCorrente {
 		return digito;
 	}
 
-	public void setDigito(int digito) {
+	public void setDigito(int digitos) {
+
+		String dig = Integer.toString(digitos);
+	
+		int primeiro = ((Integer.parseInt(dig.substring(0,1))) * 4);		
+		int segundo = (Integer.parseInt(dig.substring(1,2)) * 6);
+		int terceiro = (Integer.parseInt(dig.substring(2,3)) * 8);
+		int quarto = (Integer.parseInt(dig.substring(3,4)) * 2);
 		
-		/*
-		 * O digito da conta deve ser validado a partir do seguinte algoritmo de módulo 11:
-		 * multiplique o primeiro dígito da conta por 4, o segundo por 6, o terceiro por 8 e o quarto por 2; 
-		 * some tudo e calcule o resto da divisão (módulo) da soma por 11. Este é o valor do dígito.
-		 * Obs: se o resultado for 10 o dígito é 0.
-		*/
+		int total = (primeiro + segundo + terceiro + quarto);
 		
-		String digito1 = Integer.toString(digito);
-		
-		//System.out.println("digito"+digito1);
-		/*
-		if(digito1.substring(0,1) == "0") {	
+		int tot = total % 11;
 			
-			int primeiro = Integer.parseInt(Integer.toString(digito).substring(0,1));
-			System.out.println("Primeiro"+primeiro);
-			int pri = (primeiro * 4);
-			System.out.println("multiplo"+pri);}
+		String resultado = Integer.toString(tot);
 			
-			System.out.println("pri"+pri);*/
+		int contaDigito = Integer.parseInt(resultado.substring(1,2));
 			
-			int primeiro = Integer.parseInt(digito1.substring(0,1));
-			int pri = (primeiro * 4);
-			System.out.println("pri"+pri);
-			
-			int segundo = Integer.parseInt(digito1.substring(1,2));
-			int seg = (segundo * 6);
-			System.out.println("seg"+seg);
-			
-			int terceiro = Integer.parseInt(digito1.substring(2,3));
-			int ter = (terceiro * 8);
-			System.out.println("ter"+ter);
-			
-			int quarto = Integer.parseInt(digito1.substring(3,4));
-			int qua = (quarto * 2);
-			System.out.println("qua"+qua);
-			
-			int soma = (pri + seg + ter + qua);
-			System.out.println("SOMA: "+soma);
-			int mod = soma % 11;
-			System.out.println("MOD: "+mod);
-			
-			
-			this.digito = digito;
-		
-		
+		this.digito = contaDigito;
 		
 	}
 	

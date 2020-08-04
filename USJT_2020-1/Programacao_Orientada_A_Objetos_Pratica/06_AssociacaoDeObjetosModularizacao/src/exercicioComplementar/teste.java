@@ -29,8 +29,8 @@ public class teste {
 		
 		System.out.println(contaCorrente.getNumero());*/
 		
-		int digito = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite 4 números"));
-		contaCorrente.setDigito(digito);
+		int digitos = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite 4 números"));
+		contaCorrente.setDigito(digitos);
 		System.out.println(contaCorrente.getDigito());
 		
 		
