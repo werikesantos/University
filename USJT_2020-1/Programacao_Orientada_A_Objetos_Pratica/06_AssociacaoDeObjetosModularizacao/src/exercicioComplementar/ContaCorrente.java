@@ -134,15 +134,15 @@ public class ContaCorrente {
 		int terceiro = (Integer.parseInt(dig.substring(2,3)) * 8);
 		int quarto = (Integer.parseInt(dig.substring(3,4)) * 2);
 		
-		int total = (primeiro + segundo + terceiro + quarto);
+		int total = ((primeiro + segundo + terceiro + quarto) % 11);
 		
-		int tot = total % 11;
+		if(total == 10) {
 			
-		String resultado = Integer.toString(tot);
+			total = 0;
 			
-		int contaDigito = Integer.parseInt(resultado.substring(1,2));
+		}
 			
-		this.digito = contaDigito;
+		this.digito = total;
 		
 	}
 	
