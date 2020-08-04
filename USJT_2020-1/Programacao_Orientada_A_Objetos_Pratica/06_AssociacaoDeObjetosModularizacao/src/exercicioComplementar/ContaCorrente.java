@@ -39,6 +39,12 @@ public class ContaCorrente {
 	 * some tudo e calcule o resto da divisão (módulo) da soma por 11. Este é o valor do dígito.
 	 * Obs: se o resultado for 10 o dígito é 0.
 	 * 
+	 * D.
+	 * 
+	 * A classe Agencia tem os atributos nome do tipo String, numero e digito do tipo int. 
+	 * Crie um construtor que recebe os atributos como par‚metros e os métodos de acesso e os modificadores. 
+	 * O numero e o digito da Agencia devem seguir os mesmos padrões do número e do dígito da conta corrente.
+	 * 
 	 */
 	
 	//ATRIBUTOS
