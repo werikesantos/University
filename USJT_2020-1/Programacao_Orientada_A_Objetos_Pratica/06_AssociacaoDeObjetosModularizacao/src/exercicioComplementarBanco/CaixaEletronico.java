@@ -42,43 +42,7 @@ public class CaixaEletronico {
 		//MÉTODO DE DEPOSITO
 		System.out.println(contaCorrente.depositar(25.45));
 		System.out.println("Consultar Saldo: R$" + contaCorrente.consultarSaldo());
-		
-		/*
-		ContaCorrente contaCorrente = new ContaCorrente();
-		
-		/*
-		contaCorrente.depositar(10.0);
-		contaCorrente.depositar(30.0);
-		contaCorrente.depositar(10.0);
-		
-		System.out.println(contaCorrente.getSaldo());
-		
-		
-		
-		System.out.println(contaCorrente.getSaldo());
-		
-		contaCorrente.imprimirSaldo();
-		
-		JOptionPane.showMessageDialog(null, contaCorrente.consultarSaldo());
-			
-		
-		
-		System.out.println(contaCorrente.getNumero());
-		
-		int digitos = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite 4 números"));
-		
-		if(digitos > 0) {
-			
-			contaCorrente.setDigito(digitos);
-			System.out.println(contaCorrente.getDigito());
-			
-		}else {
-			
-			System.out.println("Digite apenas números POSITIVOS!!!");
-			
-		}
-		
-		*/
+	
 	}
 	
 
