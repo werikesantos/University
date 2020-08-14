@@ -22,32 +22,30 @@ public class CondicionadorDeAr {
 	 
 	  if(ligado == true) {
 		  
-	     sinal = "SIM";
-	     System.out.println(sinal);
-	     
-	     return this.ligado;
+	      sinal = "O Condicionador de Ar está ligado!!!\n";
+	      System.out.println(sinal);
 
-	  }else {
-		  
-		  sinal = "NÃO";
-	  	  System.out.println(sinal);
-		 
 	  }
-		
-		
-		
-		
 		
 		return this.ligado;
 		
 	}
 	
 	//MÉTODO "DESLIGAR"
-	public void desligar(boolean ligado) {
+	public boolean desligar() {
 			
-		ligado = false;
-		this.ligado = ligado;
-			
+		String sinal = "";
+		
+		 this.ligado = false;
+		 
+		  if(ligado == false) {
+			  
+		     sinal = "NÃO";
+		     System.out.println(sinal);
+
+		  }		
+		  
+		  return this.ligado;
 	}
 	
 	//MÉTODO "AUMENTAR" TEMPERATURA                  VOLTAR PARA AJUSTAR!!!!!!!!!!!!
@@ -113,7 +111,9 @@ public class CondicionadorDeAr {
 		
 		int term = termostato.getTemperatura();
 		
-		return "CondicionadorDeAr [Temperatura atual = " + term + " Graus\n" +"Ligado = " + ligado + "]";
+		term--;
+		
+		return "\n*****************************\n==== CONDICIONADOR DE AR ====\n========== RESUMO ===========\n\nLIGADO: " + ligado + "\nTEMPERATURA ATUAL: "+ term +" Graus\n\n*****************************\n";
 				
 	}
 
