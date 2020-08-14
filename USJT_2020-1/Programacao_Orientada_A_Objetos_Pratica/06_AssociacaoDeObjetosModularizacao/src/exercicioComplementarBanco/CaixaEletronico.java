@@ -5,21 +5,21 @@ public class CaixaEletronico {
 	public static void main(String[] args) {
 		
 		/*
-		 * e) Para testar faça uma classe CaixaEletronico, que irá conter o método main. 
+		 * e) Para testar faÃ§a uma classe CaixaEletronico, que irÃ¡ conter o mÃ©todo main. 
 		 * No main instancie um cliente com os seguintes dados:
 		 * 
 		 * Nome: Ademar Apior
 		 * CPF: 123231518-12
-		 * Conta Corrente: 1234 Dígito: 4
-		 * Agencia: 7890 Dígito: 5
+		 * Conta Corrente: 1234 DÃ­gito: 4
+		 * Agencia: 7890 DÃ­gito: 5
 		 * Saldo Inicial: 150.00
-		 * Operações:
+		 * OperaÃ§Ãµes:
 		 * - sacar 140.0 (sucesso)
-		 * - consultar saldo (resultado é 10.0)
+		 * - consultar saldo (resultado Ã© 10.0)
 		 * - sacar 200.0 (falha)
-		 * - consultar saldo (resultado é 10.0)
+		 * - consultar saldo (resultado Ã© 10.0)
 		 * - depositar 25.45 (sucesso)
-		 * - imprimir saldo (além dos dados de cliente, conta e agencia, o saldo deve ser 35.45)
+		 * - imprimir saldo (alÃ©m dos dados de cliente, conta e agencia, o saldo deve ser 35.45)
 		 * 
 		 */
 		
@@ -29,77 +29,20 @@ public class CaixaEletronico {
 		
 		Cliente cliente = new Cliente("Ademar Apior", "123231518-12", contaCorrente);
 		
-		System.out.println("Cliente: " + cliente.getNome() + "\nCPF: " + cliente.getCpf() + "\nConta Corrente: " + contaCorrente.getNumero() + " Dígito: " + contaCorrente.getDigito() + "\nAgencia: " + agencia.getNumero() + " Dígito: " + agencia.getDigito() + "\n\n*Operações*\nSaldo Inicial: " + contaCorrente.getSaldo());
+		System.out.println("Cliente: " + cliente.getNome() + "\nCPF: " + cliente.getCpf() + "\nConta Corrente: " + contaCorrente.getNumero() + " DÃ­gito: " + contaCorrente.getDigito() + "\nAgencia: " + agencia.getNumero() + " DÃ­gito: " + agencia.getDigito() + "\n\n*OperaÃ§Ãµes*\nSaldo Inicial: " + contaCorrente.getSaldo());
 		
-		//MÉTODO DE SAQUE DE DINHEIRO
+		//MÃ‰TODO DE SAQUE DE DINHEIRO
 		System.out.println(contaCorrente.sacar(140));
-		//MÉTODO DE CONSULTAR O SALDO EM CONTA
+		//MÃ‰TODO DE CONSULTAR O SALDO EM CONTA
 		System.out.println("Consultar Saldo: R$" + contaCorrente.consultarSaldo());		
-		//MÉTODO DE SAQUE DE DINHEIRO COM ERRO!
+		//MÃ‰TODO DE SAQUE DE DINHEIRO COM ERRO!
 		System.out.println(contaCorrente.sacar(200));
-		//MÉTODO DE SAQUE DE DINHEIRO COM ERRO!
+		//MÃ‰TODO DE SAQUE DE DINHEIRO COM ERRO!
 		System.out.println("Consultar Saldo: R$" + contaCorrente.consultarSaldo());	
-		//MÉTODO DE DEPOSITO
+		//MÃ‰TODO DE DEPOSITO
 		System.out.println(contaCorrente.depositar(25.45));
 		System.out.println("Consultar Saldo: R$" + contaCorrente.consultarSaldo());
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		/*
-		ContaCorrente contaCorrente = new ContaCorrente();
-		
-		/*
-		contaCorrente.depositar(10.0);
-		contaCorrente.depositar(30.0);
-		contaCorrente.depositar(10.0);
-		
-		System.out.println(contaCorrente.getSaldo());
-		
-		
-		
-		System.out.println(contaCorrente.getSaldo());
-		
-		contaCorrente.imprimirSaldo();
-		
-		JOptionPane.showMessageDialog(null, contaCorrente.consultarSaldo());
-			
-		
-		
-		System.out.println(contaCorrente.getNumero());
-		
-		int digitos = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite 4 números"));
-		
-		if(digitos > 0) {
-			
-			contaCorrente.setDigito(digitos);
-			System.out.println(contaCorrente.getDigito());
-			
-		}else {
-			
-			System.out.println("Digite apenas números POSITIVOS!!!");
-			
-		}
-		
-		*/
+	
 	}
 	
 
