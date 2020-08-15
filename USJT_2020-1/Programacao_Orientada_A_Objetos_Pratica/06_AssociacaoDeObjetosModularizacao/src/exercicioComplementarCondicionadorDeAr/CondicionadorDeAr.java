@@ -8,7 +8,7 @@ public class CondicionadorDeAr {
 	//CONSTRUTOR
 	public CondicionadorDeAr() {
 		
-		Termostato termostato = new Termostato();
+		termostato = new Termostato();
 		this.ligado = false;
 		
 	}
