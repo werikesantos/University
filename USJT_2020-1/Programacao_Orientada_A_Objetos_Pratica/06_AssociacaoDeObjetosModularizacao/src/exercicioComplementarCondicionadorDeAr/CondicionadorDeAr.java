@@ -48,7 +48,7 @@ public class CondicionadorDeAr {
 		  return this.ligado;
 	}
 	
-	//MÉTODO "AUMENTAR" TEMPERATURA                  VOLTAR PARA AJUSTAR!!!!!!!!!!!!
+	//MÉTODO "AUMENTAR" TEMPERATURA - TESTADO E FUNCIONANDO!!!!!!!!!!!
 	public void aumentarTemperatura(Termostato termostato) {
 		
 		/*
