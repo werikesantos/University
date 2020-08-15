@@ -115,8 +115,7 @@ public class Usuario {
 			condicionadorDeAr.reduzirTemperatura(termostato);
 			termostato.getTemperatura();
 			
-			
-			
+						
 			//AUMENTAR A TEMPERATURA PARA 25 GRAUS E IMPRIMIR A TEMPERATURA.
 			condicionadorDeAr.aumentarTemperatura(termostato);
 			termostato.getTemperatura();
