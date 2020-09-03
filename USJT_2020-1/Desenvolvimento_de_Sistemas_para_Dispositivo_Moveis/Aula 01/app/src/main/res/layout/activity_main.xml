@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,14 +12,6 @@
      VERTICAL OU HORIZONTAL PARA O APP NA PROPRIEDADE 'orientation'
      'match_parent' > CONFIGURA AS JANELAS DO APP COM AS DIMENSÕES DA JANELA PAI-->
 
-    <!--CAMPO 'EditText'> DE TEXTO EDITÁVEL
-        'id' É UM IDENTIFICADOR ÚNICO PARA O CAMPO;
-        '@' É SEMPRE REQUERIDO QUANDO VOCÊ VAI SER REFERIR A UM RECURSO EM ANDROID
-        '+' SÓ É NECESSÁRIO NA CRIAÇÃO DO id
-        PARA CADA id SERÁ CRIADO UM RECURSO NO DIRETÓRIO /gen-
-        'wrap_content' EM width DIZ QUE O CAMPO DEVE SER UM TAMANHO SUFICIENTE PARA QUE O CONTEÚDO CAIBA NELE
-        'hint' É A STRING DEFAULT QUE APARECE NO CAMPO ANTES DELE SER PREENCHIDO-->
-
     <EditText
         android:id="@+id/edit_message"
         android:layout_width="0dp"
@@ -26,6 +19,13 @@
         android:hint="@string/edit_message"
         android:layout_weight="1">
     </EditText>
+    <!--CAMPO 'EditText'> DE TEXTO EDITÁVEL
+       'id' É UM IDENTIFICADOR ÚNICO PARA O CAMPO;
+       '@' É SEMPRE REQUERIDO QUANDO VOCÊ VAI SER REFERIR A UM RECURSO EM ANDROID
+       '+' SÓ É NECESSÁRIO NA CRIAÇÃO DO id
+       PARA CADA id SERÁ CRIADO UM RECURSO NO DIRETÓRIO /gen-
+       'wrap_content' EM width DIZ QUE O CAMPO DEVE SER UM TAMANHO SUFICIENTE PARA QUE O CONTEÚDO CAIBA NELE
+       'hint' É A STRING DEFAULT QUE APARECE NO CAMPO ANTES DELE SER PREENCHIDO-->
 
     <Button
         android:layout_width="wrap_content"
