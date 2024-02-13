@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">Meu Primeiro App</string> <!-- ESSE CAMPO SERVE PARA COLOCAR O TÍTULO DO APP-->
-    <string name="edit_message">Escreva uma mensagem aqui</string> <!-- ESSE CAMPO SERVE PARA COLOCAR UMA MENSAGEM NO CAMPO 'UI'-->
-    <string name="button_send">Envie</string> <!-- COLOCANDO UM NOME PARA O BOTÃO-->
-</resources>
